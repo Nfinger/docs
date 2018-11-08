@@ -5,9 +5,6 @@ language_tabs: # must be one of https://git.io/vQNgJ
 # shell
   - shell
 
-toc_footers:
-
-
 includes:
   - ident
   - goldmine
@@ -18,7 +15,7 @@ search: true
 
 # Introduction
 
-Welcome to the [Provide](http://provide.services/) ident and goldmine API  portal. Ident API lets you manage Provide platform users and applications. Goldmine gives you the power to leverage public blockchain information in building best-of-breed applications. Both ident and goldmine API are RESTful and use HTTP.
+Welcome to the [Provide](http://provide.services/) ident and goldmine API  portal. Ident microservice lets you manage Provide platform users and applications. Goldmine API gives you the power to leverage public blockchain information in building best-of-breed applications. Both ident and goldmine are RESTful.
 
 # Authentication
 
@@ -48,12 +45,14 @@ HTTP/2 201
 }
 ```
 
-Provide uses API keys to allow access to the API. If you already have an account on the [Provide console](https://dawn.provide.services/sign-in), you can get a microservice token by simply deploying an application.
+Provide uses API keys to allow access to the API. If you already have an account on the [Provide console](https://dawn.provide.services/sign-in), you can get a token by simply deploying an application. We recommend you check the status of the service before making requests.
 
-Provide expects for the API key to be included in all API requests to the server in a header that looks like the following:
+Provide expects for the key to be included in all API requests to the server in a header that looks like the following:
 
-`Authorization: bearer`
+`Authorization: bearer yoUr-AutH-TOKeN-FrOm-sIgnINg-in`
+
+The `bearer` authorization header is scoped to an authorized platform user or application. This header may contain a sub to further limit scope to a specific token, smart contract, wallet or other entity.
 
 <aside class="success">
-You will need a Provide ID and Password to receive a token.
+To receive a token, you need the email and password you used to create a Provide account.
 </aside>
