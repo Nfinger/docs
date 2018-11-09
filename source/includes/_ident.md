@@ -15,7 +15,7 @@ This endpoint checks the status of the ident microservice.
 `GET /api/vi/status`
 
 
-## Get Applications
+## Apps: Get Applications
 
 
 ```shell
@@ -63,7 +63,7 @@ This endpoint enumerates platform Applications visible to the authorized caller.
 
 `GET /api/v1/applications`
 
-## Post an Application
+## Apps: Post an Application
 
 
 ```shell
@@ -98,7 +98,7 @@ This endpoint creates a new Application on behalf of the authorized platform Use
 
 `POST /api/v1/applications`
 
-## Get Application details
+## Apps: Get Application details
 
 
 ```shell
@@ -141,7 +141,7 @@ Parameter | Description
 id | The ID of the Application to retrieve
 
 
-## Update Application details
+## Apps: Update Application details
 
 
 ```shell
@@ -166,7 +166,7 @@ Parameter | Description
 id | The ID of the Application to retrieve
 
 
-## Get Application tokens
+## Apps: Get Application tokens
 
 ```shell
 curl -i \
@@ -203,7 +203,7 @@ Parameter | Description
 --------- | -----------
 id | The ID of the Application to retrieve
 
-## Delete an Application
+## Apps: Delete an Application
 
 
 ```shell
@@ -238,7 +238,7 @@ Parameter | Description
 id | The ID of the Application to retrieve
 
 
-## Get Tokens
+## Tokens: Get Tokens
 
 
 ```shell
@@ -279,7 +279,7 @@ This endpoint enumerates previously authorized Tokens for the authorized User or
 `GET /api/v1/tokens`
 
 
-## Post Tokens
+## Tokens: Post Tokens
 
 
 ```shell
@@ -314,7 +314,7 @@ This endpoint authorizes a Token on behalf of the authorized User or Application
 `POST /api/v1/tokens`
 
 
-## Delete Tokens
+## Tokens: Delete Tokens
 
 
 ```shell
@@ -336,7 +336,7 @@ Parameter | Description
 --------- | -----------
 id | The ID of the Application to retrieve
 
-## Get Users
+## Users: Get Users
 
 
 ```shell
@@ -375,7 +375,7 @@ This endpoint enumerates previously created Users for the authorized Application
 `GET /api/v1/users`
 
 
-## Post Users
+## Users: Post Users
 
 
 ```shell
@@ -407,7 +407,7 @@ This endpoint creates a new platform User or a User on behalf of an authorized A
 `POST /api/v1/users`
 
 
-## Put Users
+## Users: Update Users
 
 
 ```shell
@@ -433,7 +433,7 @@ Parameter | Description
 id | The ID of the Application to retrieve
 
 
-## Delete Users
+## Users: Delete Users
 
 
 ```shell

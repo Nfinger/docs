@@ -1,6 +1,20 @@
 # goldmine
 
-## Get Networks
+## Get Status
+
+```shell
+curl -i https://goldmine.provide.services/status
+HTTP/2 204
+```
+
+This endpoint checks the status of the goldmine microservice.
+
+### HTTP Request
+
+`GET /status`
+
+
+## Networks: Get Networks
 
 
 ```shell
@@ -321,7 +335,7 @@ This endpoint enumerates available blockchain Networks and related configuration
 `GET /api/v1/networks`
 
 
-## Get a Specific Network
+## Networks: Get a Specific Network
 
 ```shell
 curl -i \
@@ -560,7 +574,7 @@ Parameter | Description
 id | The ID of the specific network
 
 
-## Get Network Addresses
+## Networks:  Network Addresses
 
 ```shell
 curl -i \
@@ -590,7 +604,7 @@ Parameter | Description
 --------- | -----------
 id | The ID of the specific network
 
-## Get Network blocks
+## Networks: Get Network blocks
 
 ```shell
 curl -i \
@@ -620,7 +634,7 @@ Parameter | Description
 --------- | -----------
 id | The ID of the specific network
 
-## Get Network contracts
+## Networks: Get Network contracts
 
 ```shell
 curl -i \
@@ -658,7 +672,7 @@ Parameter | Description
 --------- | -----------
 id | The ID of the specific network
 
-## Get Network transactions
+## Networks: Get Network transactions
 
 ```shell
 curl -i \
@@ -720,7 +734,7 @@ Parameter | Description
 --------- | -----------
 id | The ID of the specific network
 
-## Get Network transaction details
+## Networks: Get Network transaction details
 
 ```shell
 curl -i \
@@ -793,7 +807,7 @@ Parameter | Description
 id | The ID of the specific network
 transactionId | The ID of the specific transaction
 
-## Update a Network
+## Networks: Update a Network
 
 ```shell
 curl -i -XPUT \
@@ -817,7 +831,7 @@ Parameter | Description
 --------- | -----------
 id | The ID of the specific network
 
-## Get a Network's Contract details
+## Networks: Get a Network's Contract details
 
 ```shell
 curl -i \
@@ -903,7 +917,7 @@ Parameter | Description
 id | The ID of the specific network
 contractId | The ID of the specified contract
 
-## Create a new Network
+## Networks: Create a new Network
 
 ```shell
 curl -i \
@@ -1321,7 +1335,7 @@ This endpoint creates a new Network.
 `POST /api/v1/networks`
 
 
-## Get a Network's Bridges
+## Networks: Get a Network's Bridges
 
 ```shell
 curl -i \
@@ -1352,7 +1366,7 @@ Parameter | Description
 --------- | -----------
 id | The ID of the specific network
 
-## Get a Network's Connectors
+## Networks: Get a Network's Connectors
 
 ```shell
 curl -i \
@@ -1383,7 +1397,7 @@ Parameter | Description
 --------- | -----------
 id | The ID of the specific network
 
-## Get a Network's Nodes
+## Networks: Get a Network's Nodes
 
 ```shell
 curl -i \
@@ -1448,7 +1462,7 @@ Parameter | Description
 --------- | -----------
 id | The ID of the specific network
 
-## Create a new Network Node
+## Networks: Create a new Network Node
 
 ```shell
 curl -i \
@@ -1532,7 +1546,7 @@ Parameter | Description
 --------- | -----------
 id | The ID of the specific network
 
-## Get a specific Network Node
+## Networks: Get a specific Network Node
 
 ```shell
 curl -i \
@@ -1678,7 +1692,7 @@ Parameter | Description
 id | The ID of the specific network
 nodeId | The ID of the specified Node
 
-## Get logs for a specific Network Node
+## Networks: Get logs for a specific Network Node
 
 ```shell
 curl -i \
@@ -1728,7 +1742,7 @@ Parameter | Description
 id | The ID of the specific network
 nodeId | The ID of the specified Node
 
-## Delete a Specific Node
+## Networks: Delete a Specific Node
 
 ```shell
 curl -i -XDELETE \
@@ -1752,7 +1766,7 @@ Parameter | Description
 id | The ID of the specific network
 nodeId | The ID of the specified Node
 
-## Get a Network's Oracles
+## Networks: Get a Network's Oracles
 
 ```shell
 curl -i \
@@ -1782,7 +1796,7 @@ Parameter | Description
 --------- | -----------
 id | The ID of the specific network
 
-## Get a Network's Tokens
+## Networks: Get a Network's Tokens
 
 ```shell
 curl -i \
@@ -1805,7 +1819,7 @@ Parameter | Description
 --------- | -----------
 id | The ID of the specific network
 
-## Get a Network's Status
+## Networks: Get a Network's Status
 
 ```shell
 curl -i \
@@ -1869,7 +1883,7 @@ Parameter | Description
 --------- | -----------
 id | The ID of the specific network
 
-## Get Prices
+## Prices: Get Prices
 
 ```shell
 curl -i \
@@ -1897,7 +1911,7 @@ This endpoint retrieves real-time pricing data for major currency pairs and supp
 `GET /api/v1/prices`
 
 
-## Get Connectors
+## Connectors: Get Connectors
 
 
 ```shell
@@ -1932,7 +1946,7 @@ This endpoint enumerates configured Connectors.
 `GET /api/v1/connectors`
 
 
-## Configure a new Connector
+## Connectors: Configure a new Connector
 
 ```shell
 curl -i \
@@ -1976,7 +1990,7 @@ This endpoint configures a new Connector.
 `POST /api/v1/connectors`
 
 
-## Get details for a Specific Connector
+## Connectors: Get details for a Specific Connector
 
 ```shell
 curl -i \
@@ -2006,7 +2020,7 @@ Parameter | Description
 --------- | -----------
 id | The ID of the specific network
 
-## Delete a Specific Connector
+## Connectors: Delete a Specific Connector
 
 ```shell
 curl -i -XDELETE \
@@ -2029,7 +2043,7 @@ Parameter | Description
 --------- | -----------
 id | The ID of the specific network
 
-## Get Contracts
+## Contracts: Get Contracts
 
 
 ```shell
@@ -2082,7 +2096,7 @@ Parameter | Default | Description
 --------- | ----- | -----------
 filter_tokens | true | Filters token contracts from the response
 
-## Deploy a new Contract
+## Contracts: Deploy a new Contract
 
 ```shell
 curl -i \
@@ -2176,7 +2190,7 @@ This endpoint deploys a new contract.
 `POST /api/v1/contracts`
 
 
-## Get a Specific Contract
+## Contracts: Get a Specific Contract
 
 ```shell
 curl -i \
@@ -2266,7 +2280,7 @@ Parameter | Description
 --------- | -----------
 id | The ID of the specific contract
 
-## Execute a Specific Contract
+## Contracts: Execute a Specific Contract
 
 ```shell
 curl -i \
@@ -2306,7 +2320,7 @@ Parameter | Description
 id | The ID of the specific contract
 
 
-## Get Oracles
+## Oracles: Get Oracles
 
 ```shell
 curl -i \
@@ -2326,463 +2340,465 @@ This endpoint enumerates managed oracle contracts.
 
 `GET /api/v1/oracles`
 
-**STOP HERE**
 
-## Create and deploy an Oracle
+## Oracles: Create and deploy an Oracle
+
+
+This endpoint creates a managed Oracle smart contract and deploys it to a Network. Upon successful deployment, the data feed will be consumed and written onto the ledger associated with the Network.
+
+<i> (Not yet implemented)</i>
+
+### HTTP Request
+
+`POST /api/v1/oracles`
+
+
+## Oracles: Get a Specific Oracle
+
+
+This endpoint retrieves details for a specific oracle.
+
+
+### HTTP Request
+
+`GET /api/v1/oracles/:id`
+
+### URL Parameters
+
+Parameter | Description
+--------- | -----------
+id | The ID of the specific Oracle
+
+
+## Tokens: Get Tokens
 
 ```shell
-curl "http://example.com/api/kittens/2"
-  -H "Authorization: meowmeowmeow"
+curl -i \
+     -H 'content-type: application/json' \
+     -H 'authorization: bearer an-apPliCaTIOn-aPi-tOkEn' \
+     https://goldmine.provide.services/api/v1/tokens
+HTTP/2 200
 ```
 
 > The above command returns JSON structured like this:
 
 ```json
 {
-  "id": 2,
-  "name": "Max",
-  "breed": "unknown",
-  "fluffiness": 5,
-  "cuteness": 10
+    "message": "not implemented"
 }
 ```
 
-This endpoint retrieves a specific kitten.
-
-<aside class="warning">Inside HTML code blocks like this one, you can't use Markdown, so use <code>&lt;code&gt;</code> blocks to denote code.</aside>
+This endpoint enumerates managed Token contracts.
 
 ### HTTP Request
 
-`GET /api/vi/status`
+`GET /api/v1/tokens`
 
-### URL Parameters
 
-Parameter | Description
---------- | -----------
-id | The ID of the specific network
+## Tokens: Create a Token
 
-## Get a Specific Oracle
 
-```shell
-curl "http://example.com/api/kittens/2"
-  -H "Authorization: meowmeowmeow"
+This endpoint creates a new Token.
+
+<i>(Not yet implemented)</i>
+
+### HTTP Request
+
+`POST /api/v1/tokens`
+
+
+## Tokens: Get details for a Specific Token
+
+```curl -i \
+     -H 'content-type: application/json' \
+     -H 'authorization: bearer an-apPliCaTIOn-aPi-tOkEn' \
+     https://goldmine.provide.services/api/v1/tokens/52d9caf3-0a56-4670-886e-8136b633d52b
+HTTP/2 501
 ```
 
 > The above command returns JSON structured like this:
 
 ```json
 {
-  "id": 2,
-  "name": "Max",
-  "breed": "unknown",
-  "fluffiness": 5,
-  "cuteness": 10
+    "message": "not implemented"
 }
 ```
 
-This endpoint retrieves a specific kitten.
+This endpoint retrieves details for a specific Token.
 
-<aside class="warning">Inside HTML code blocks like this one, you can't use Markdown, so use <code>&lt;code&gt;</code> blocks to denote code.</aside>
 
 ### HTTP Request
 
-`GET /api/vi/status`
+`GET /api/v1/tokens/:id`
 
 ### URL Parameters
 
 Parameter | Description
 --------- | -----------
-id | The ID of the specific network
+id | The ID of the specific Token
 
 
-## Get Tokens
+## Transactions: Get Transactions
+
 
 ```shell
-curl "http://example.com/api/kittens/2"
-  -H "Authorization: meowmeowmeow"
+curl -i \
+     -H 'content-type: application/json' \
+     -H 'authorization: bearer an-apPliCaTIOn-aPi-tOkEn' \
+     https://goldmine.provide.services/api/v1/transactions
+HTTP/2 200
 ```
 
 > The above command returns JSON structured like this:
 
 ```json
 {
-  "id": 2,
-  "name": "Max",
-  "breed": "unknown",
-  "fluffiness": 5,
-  "cuteness": 10
-}
+        "id": "fb4c5912-628f-4d8e-9c67-76d379010a71",
+        "created_at": "2018-10-03T20:48:37.292823Z",
+        "application_id": "e49302c5-e485-4e14-9b0f-db5643b6a15c",
+        "user_id": null,
+        "network_id": "024ff1ef-7369-4dee-969c-1918c6edb5d4",
+        "wallet_id": "efef1044-4958-43bc-903b-28f2bb938037",
+        "to": null,
+        "value": 0,
+        "data": "0x608060405234801561001057600080fd5b50610704806100206000396000f300608060405260...",
+        "hash": "0xf769d96671abfd8c7dfe9b747db1380d1b974d6282833e573900bad7b11e51e5",
+        "status": "success",
+        "params": null,
+        "traces": null,
+        "ref": null,
+        "description": null
+    }
 ```
 
-This endpoint retrieves a specific kitten.
+This endpoint enumerates transactions.
 
-<aside class="warning">Inside HTML code blocks like this one, you can't use Markdown, so use <code>&lt;code&gt;</code> blocks to denote code.</aside>
 
 ### HTTP Request
 
-`GET /api/vi/status`
+`GET /api/v1/transactions`
 
-### URL Parameters
 
-Parameter | Description
---------- | -----------
-id | The ID of the specific network
-
-## Create a Token
+## Transactions: Post a Transaction using a Wallet
 
 ```shell
-curl "http://example.com/api/kittens/2"
-  -H "Authorization: meowmeowmeow"
+curl -i \
+     -H 'content-type: application/json' \
+     -H 'authorization: bearer an-apPliCaTIOn-aPi-tOkEn' \
+     https://goldmine.provide.services/api/v1/transactions \
+     -d '{"network_id": "024ff1ef-7369-4dee-969c-1918c6edb5d4", "wallet_id": "efef1044-4958-43bc-903b-28f2bb938037", "to": "0xfb17cB7bb99128AAb60B1DD103271d99C8237c0d", "value": 0}'
+HTTP/2 201
 ```
 
 > The above command returns JSON structured like this:
 
 ```json
 {
-  "id": 2,
-  "name": "Max",
-  "breed": "unknown",
-  "fluffiness": 5,
-  "cuteness": 10
+    "id": "6759791c-71b5-4fb1-bf19-5488a9f9ee1e",
+    "created_at": "2018-10-15T04:04:47.903585906Z",
+    "application_id": "e49302c5-e485-4e14-9b0f-db5643b6a15c",
+    "user_id": null,
+    "network_id": "024ff1ef-7369-4dee-969c-1918c6edb5d4",
+    "wallet_id": "efef1044-4958-43bc-903b-28f2bb938037",
+    "to": "0xfb17cB7bb99128AAb60B1DD103271d99C8237c0d",
+    "value": 0,
+    "data": null,
+    "hash": "0xbc2a0fb68c06d5c2fa603fb7131c3922c4b3b19ece56ee8f8a7d241a9064233e",
+    "status": "pending",
+    "params": null,
+    "traces": null,
+    "ref": null,
+    "description": null
+}
+```
+> If the broadcast transaction represents a contract deployment, a contract will be created implicitly after deployment is confirmed with the Network. The following example represents a Contract creation with provided params specific to the Ethereum network.
+
+```shell
+curl -i \
+    -H 'authorization: bearer an-apPliCaTIOn-aPi-tOkEn' \
+    https://goldmine.provide.services/api/v1/transactions \
+    -d '{
+  "network_id": "ba02ff92-f5bb-4d44-9187-7e1cc214b9fc",
+  "wallet_id": "ce1fa3b8-049e-467b-90d8-53b9a5098b7b",
+  "data": "60606040526003805460a060020a60ff021916905560006...",
+  "params": {"name": "ProvideToken",
+                "abi": [
+                  {
+                    "constant": true,
+                    "inputs": [
+                      {
+                        "name": "_holder",
+                        "type": "address"
+                      }
+                    ],
+                    "name": "tokenGrantsCount",
+                    "outputs": [
+                      {
+                        "name": "index",
+                        "type": "uint256"
+                      }
+                    ],
+                    "payable": false,
+                    "type": "function"
+                  },
+                  ...
+                  {
+                    "anonymous": false,
+                    "inputs": [
+                      {
+                        "indexed": true,
+                        "name": "from",
+                        "type": "address"
+                      },
+                      {
+                        "indexed": true,
+                        "name": "to",
+                        "type": "address"
+                      },
+                      {
+                        "indexed": false,
+                        "name": "value",
+                        "type": "uint256"
+                      }
+                    ],
+                    "name": "Transfer",
+                    "type": "event"
+                  }
+                ]
+              }
+            }'
+HTTP/2 422
+```
+> The above command returns JSON structured like this:
+
+```json
+{
+    "id": "6759791c-71b5-4fb1-bf19-5488a9f9ee1e",
+    "created_at": "2018-10-15T04:04:47.903585906Z",
+    "application_id": "e49302c5-e485-4e14-9b0f-db5643b6a15c",
+    "user_id": null,
+    "network_id": "024ff1ef-7369-4dee-969c-1918c6edb5d4",
+    "wallet_id": "efef1044-4958-43bc-903b-28f2bb938037",
+    "to": "0xfb17cB7bb99128AAb60B1DD103271d99C8237c0d",
+    "value": 0,
+    "data": null,
+    "hash": "0xbc2a0fb68c06d5c2fa603fb7131c3922c4b3b19ece56ee8f8a7d241a9064233e",
+    "status": "pending",
+    "params": null,
+    "traces": null,
+    "ref": null,
+    "description": null
 }
 ```
 
-This endpoint retrieves a specific kitten.
 
-<aside class="warning">Inside HTML code blocks like this one, you can't use Markdown, so use <code>&lt;code&gt;</code> blocks to denote code.</aside>
+This endpoint prepares and signs a protocol Transaction using a Wallet on behalf of a specific application User and broadcasts the transaction to the public blockchain Network.
+
+Under certain conditions, calling this API will result in a transaction being created which requires lifecycle management (i.e., in the case when a managed Sidechain has been configured to scale micropayment channels and/or coalesce an application’s transactions for on-chain settlement).
+
 
 ### HTTP Request
 
-`GET /api/vi/status`
+`POST /api/v1/transactions`
 
-### URL Parameters
 
-Parameter | Description
---------- | -----------
-id | The ID of the specific network
-
-## Get details for a Specific Token
+## Transactions: Get a specific Transaction
 
 ```shell
-curl "http://example.com/api/kittens/2"
-  -H "Authorization: meowmeowmeow"
+curl -i \
+     -H 'content-type: application/json' \
+     -H 'authorization: bearer an-apPliCaTIOn-aPi-tOkEn' \
+     https://goldmine.provide.services/api/v1/transactions/fb4c5912-628f-4d8e-9c67-76d379010a71
+HTTP/2 200
 ```
 
 > The above command returns JSON structured like this:
 
 ```json
 {
-  "id": 2,
-  "name": "Max",
-  "breed": "unknown",
-  "fluffiness": 5,
-  "cuteness": 10
+    "id": "fb4c5912-628f-4d8e-9c67-76d379010a71",
+    "created_at": "2018-10-03T20:48:37.292823Z",
+    "application_id": "e49302c5-e485-4e14-9b0f-db5643b6a15c",
+    "user_id": null,
+    "network_id": "024ff1ef-7369-4dee-969c-1918c6edb5d4",
+    "wallet_id": "efef1044-4958-43bc-903b-28f2bb938037",
+    "to": null,
+    "value": 0,
+    "data": "0x608060405234801561001057600080fd5b506...",
+    "hash": "0xf769d96671abfd8c7dfe9b747db1380d1b97...",
+    "status": "success",
+    "params": null,
+    "traces": {
+        "result": [
+            {
+                "action": {
+                    "callType": null,
+                    "from": "0xac805f1c2bf9a19b448bc207075b992be29bc91a",
+                    "gas": "0x57caf",
+                    "init": "0x608060405234801561001057600080f...",
+                    "input": null,
+                    "to": null,
+                    "value": "0x0"
+                },
+                "blockHash": "0x4a5e8e1bf594dc4df5c54c4b9c91f...",
+                "blockNumber": 2389804,
+                "result": {
+                    "address": "0x2a3d64307a551a1f2902867f5b2437bc52f0c5c4",
+                    "code": "0x6080604052600436106100565763ffffffff7c010000000...",
+                    "gasUsed": "0x57caf",
+                    "output": null
+                },
+                "error": null,
+                "subtraces": 0,
+                "traceAddress": [],
+                "transactionHash": "0xf769d96671abfd8c7dfe9b747db138...",
+                "transactionPosition": 0,
+                "type": "create"
+            }
+        ]
+    },
+    "ref": null,
+    "description": null
 }
 ```
 
-This endpoint retrieves a specific kitten.
+This endpoint retrieves details for a specific Transaction.
 
-<aside class="warning">Inside HTML code blocks like this one, you can't use Markdown, so use <code>&lt;code&gt;</code> blocks to denote code.</aside>
+
 
 ### HTTP Request
 
-`GET /api/vi/status`
+`GET /api/v1/transactions/:id`
 
 ### URL Parameters
 
 Parameter | Description
 --------- | -----------
-id | The ID of the specific network
+id | The ID of the specific Transaction
 
 
-## Get Transactions
-
+## Wallets: Get Wallets
 
 ```shell
-curl "http://example.com/api/kittens/2"
-  -H "Authorization: meowmeowmeow"
+curl -i \
+     -H 'content-type: application/json' \
+     -H 'authorization: bearer an-apPliCaTIOn-aPi-tOkEn' \
+     https://goldmine.provide.services/api/v1/wallets
+HTTP/2 200
 ```
 
 > The above command returns JSON structured like this:
 
 ```json
 {
-  "id": 2,
-  "name": "Max",
-  "breed": "unknown",
-  "fluffiness": 5,
-  "cuteness": 10
-}
+        "id": "efef1044-4958-43bc-903b-28f2bb938037",
+        "created_at": "2018-10-03T20:48:03.24878Z",
+        "application_id": "e49302c5-e485-4e14-9b0f-db5643b6a15c",
+        "user_id": null,
+        "network_id": "024ff1ef-7369-4dee-969c-1918c6edb5d4",
+        "address": "0xAC805F1c2Bf9a19b448bc207075B992Be29bC91a",
+        "balance": null,
+        "accessed_at": "2018-10-03T20:48:37.291739Z"
+    }
 ```
 
-This endpoint retrieves a specific kitten.
+This endpoint enumerates wallets used for storing cryptocurrency or tokens on behalf of Provide users managing cryptographic material (i.e., for signing transactions).
 
-<aside class="warning">Inside HTML code blocks like this one, you can't use Markdown, so use <code>&lt;code&gt;</code> blocks to denote code.</aside>
+<aside class="warning">Balances are returned as null here for performance reasons; see  <code>GET /api/v1/wallets/:id</code> to get balance details in the native currency for the network.</aside>
 
 ### HTTP Request
 
-`GET /api/vi/status`
+`GET /api/v1/wallets`
 
-### URL Parameters
 
-Parameter | Description
---------- | -----------
-id | The ID of the specific network
 
-## Post a Transaction using a wallet
+## Wallets: Create a Wallet
 
 ```shell
-curl "http://example.com/api/kittens/2"
-  -H "Authorization: meowmeowmeow"
+curl -i \
+     -H 'content-type: application/json' \
+     -H 'authorization: bearer an-apPliCaTIOn-aPi-tOkEn' \
+     https://goldmine.provide.services/api/v1/wallets \
+     -d '{"network_id":"024ff1ef-7369-4dee-969c-1918c6edb5d4"}'
+HTTP/2 201
 ```
 
 > The above command returns JSON structured like this:
 
 ```json
 {
-  "id": 2,
-  "name": "Max",
-  "breed": "unknown",
-  "fluffiness": 5,
-  "cuteness": 10
+    "id": "4059f749-55ad-4c1c-975d-6c5040801079",
+    "created_at": "2018-10-12T21:47:13.698524641Z",
+    "application_id": "e49302c5-e485-4e14-9b0f-db5643b6a15c",
+    "user_id": null,
+    "network_id": "024ff1ef-7369-4dee-969c-1918c6edb5d4",
+    "address": "0xa4f8874C971EB257C0Fd8e33401b274e2a27133d",
+    "balance": null,
+    "accessed_at": null
 }
 ```
 
-This endpoint retrieves a specific kitten.
+This endpoint creates a managed Wallet (signing identity) capable of storing cryptocurrencies native to a specified Network.
 
-<aside class="warning">Inside HTML code blocks like this one, you can't use Markdown, so use <code>&lt;code&gt;</code> blocks to denote code.</aside>
 
 ### HTTP Request
 
-`GET /api/vi/status`
+`POST /api/v1/wallets`
 
-### URL Parameters
 
-Parameter | Description
---------- | -----------
-id | The ID of the specific network
-
-## Post a in implicit contract ^^
+## Wallets: Get a Specific Wallet
 
 ```shell
-curl "http://example.com/api/kittens/2"
-  -H "Authorization: meowmeowmeow"
+curl -i \
+     -H 'content-type: application/json' \
+     -H 'authorization: bearer an-apPliCaTIOn-aPi-tOkEn' \
+     https://goldmine.provide.services/api/v1/wallets/efef1044-4958-43bc-903b-28f2bb938037
+HTTP/2 200
 ```
 
 > The above command returns JSON structured like this:
 
 ```json
 {
-  "id": 2,
-  "name": "Max",
-  "breed": "unknown",
-  "fluffiness": 5,
-  "cuteness": 10
+    "id": "efef1044-4958-43bc-903b-28f2bb938037",
+    "created_at": "2018-10-03T20:48:03.24878Z",
+    "application_id": "e49302c5-e485-4e14-9b0f-db5643b6a15c",
+    "user_id": null,
+    "network_id": "024ff1ef-7369-4dee-969c-1918c6edb5d4",
+    "address": "0xAC805F1c2Bf9a19b448bc207075B992Be29bC91a",
+    "balance": 0,
+    "accessed_at": "2018-10-03T20:48:37.291739Z"
 }
 ```
 
-This endpoint retrieves a specific kitten.
+This endpoint retrieves Network-specific details for a specific Wallet.
 
-<aside class="warning">Inside HTML code blocks like this one, you can't use Markdown, so use <code>&lt;code&gt;</code> blocks to denote code.</aside>
+
 
 ### HTTP Request
 
-`GET /api/vi/status`
+`GET /api/v1/wallets/:id`
 
 ### URL Parameters
 
 Parameter | Description
 --------- | -----------
-id | The ID of the specific network
+id | The ID of the specific wallet
 
-## Get a specific Transaction
+## Wallets: Get Wallet balance by Contract
 
-```shell
-curl "http://example.com/api/kittens/2"
-  -H "Authorization: meowmeowmeow"
-```
 
-> The above command returns JSON structured like this:
+This endpoint retrieves details of a specific Wallet's balance by token contract.
 
-```json
-{
-  "id": 2,
-  "name": "Max",
-  "breed": "unknown",
-  "fluffiness": 5,
-  "cuteness": 10
-}
-```
-
-This endpoint retrieves a specific kitten.
-
-<aside class="warning">Inside HTML code blocks like this one, you can't use Markdown, so use <code>&lt;code&gt;</code> blocks to denote code.</aside>
+<i>(Not yet implemented)</i>
 
 ### HTTP Request
 
-`GET /api/vi/status`
+`GET /api/v1/wallets/:id/balances/:tokenId`
 
 ### URL Parameters
 
 Parameter | Description
 --------- | -----------
-id | The ID of the specific network
-
-
-## Get Wallets
-
-```shell
-curl "http://example.com/api/kittens/2"
-  -X DELETE
-  -H "Authorization: meowmeowmeow"
-```
-
-> The above command returns JSON structured like this:
-
-```json
-{
-  "id": 2,
-  "deleted" : ":("
-}
-```
-
-This endpoint deletes a specific kitten.
-
-### HTTP Request
-
-`DELETE http://example.com/kittens/<ID>`
-
-### URL Parameters
-
-Parameter | Description
---------- | -----------
-id | The ID of the specific network
-
-## Create a Wallet
-
-```shell
-curl "http://example.com/api/kittens/2"
-  -H "Authorization: meowmeowmeow"
-```
-
-> The above command returns JSON structured like this:
-
-```json
-{
-  "id": 2,
-  "name": "Max",
-  "breed": "unknown",
-  "fluffiness": 5,
-  "cuteness": 10
-}
-```
-
-This endpoint retrieves a specific kitten.
-
-<aside class="warning">Inside HTML code blocks like this one, you can't use Markdown, so use <code>&lt;code&gt;</code> blocks to denote code.</aside>
-
-### HTTP Request
-
-`GET /api/vi/status`
-
-### URL Parameters
-
-Parameter | Description
---------- | -----------
-id | The ID of the specific network
-
-## Get a Specific Wallet
-
-```shell
-curl "http://example.com/api/kittens/2"
-  -H "Authorization: meowmeowmeow"
-```
-
-> The above command returns JSON structured like this:
-
-```json
-{
-  "id": 2,
-  "name": "Max",
-  "breed": "unknown",
-  "fluffiness": 5,
-  "cuteness": 10
-}
-```
-
-This endpoint retrieves a specific kitten.
-
-<aside class="warning">Inside HTML code blocks like this one, you can't use Markdown, so use <code>&lt;code&gt;</code> blocks to denote code.</aside>
-
-### HTTP Request
-
-`GET /api/vi/status`
-
-### URL Parameters
-
-Parameter | Description
---------- | -----------
-id | The ID of the specific network
-
-## Get Wallet details by Contract
-
-```shell
-curl "http://example.com/api/kittens/2"
-  -H "Authorization: meowmeowmeow"
-```
-
-> The above command returns JSON structured like this:
-
-```json
-{
-  "id": 2,
-  "name": "Max",
-  "breed": "unknown",
-  "fluffiness": 5,
-  "cuteness": 10
-}
-```
-
-This endpoint retrieves a specific kitten.
-
-<aside class="warning">Inside HTML code blocks like this one, you can't use Markdown, so use <code>&lt;code&gt;</code> blocks to denote code.</aside>
-
-### HTTP Request
-
-`GET /api/vi/status`
-
-### URL Parameters
-
-Parameter | Description
---------- | -----------
-id | The ID of the specific network
-
-
-## Get Status
-
-```shell
-curl "http://example.com/api/kittens/2"
-  -X DELETE
-  -H "Authorization: meowmeowmeow"
-```
-
-> The above command returns JSON structured like this:
-
-```json
-{
-  "id": 2,
-  "deleted" : ":("
-}
-```
-
-This endpoint deletes a specific kitten.
-
-### HTTP Request
-
-`DELETE http://example.com/kittens/<ID>`
-
-### URL Parameters
-
-Parameter | Description
---------- | -----------
-id | The ID of the specific network
+id | The ID of the specific wallet
+tokenId | The ID of the specific token contract
