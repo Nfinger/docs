@@ -2,7 +2,6 @@
 
 ## Status
 
-
 ```shell
 curl -i https://ident.provide.services/status
 HTTP/2 204

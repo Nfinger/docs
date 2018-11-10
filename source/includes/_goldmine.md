@@ -13,9 +13,7 @@ This endpoint checks the status of the goldmine microservice.
 
 `GET /status`
 
-
 ## Networks: Get Networks
-
 
 ```shell
 curl -i \
