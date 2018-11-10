@@ -225,6 +225,7 @@ HTTP/2 501
 ```
 
 This endpoint removes the specified Application.
+
 <i>(Not yet implemented)</i>
 
 ### HTTP Request
@@ -400,7 +401,7 @@ HTTP/2 201
 ]
 ```
 
-This endpoint creates a new platform User or a User on behalf of an authorized Application..
+This endpoint creates a new platform User or a User on behalf of an authorized Application.
 
 ### HTTP Request
 
@@ -455,6 +456,7 @@ HTTP/2 501
 ```
 
 This endpoint removes a User record.
+
 <i> (Not yet implemented)</i>
 
 ### HTTP Request

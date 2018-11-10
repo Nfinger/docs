@@ -1,7 +1,5 @@
 # Errors
 
-
-
 Provide API use the following error codes:
 
 

@@ -592,6 +592,7 @@ HTTP/2 501
 ```
 
 This endpoint enumerates the addresses of the given Network.
+
 <i> (Not yet implemented)</i>
 
 ### HTTP Request
@@ -622,6 +623,7 @@ HTTP/2 501
 ```
 
 This endpoint enumerates the blocks of the given Network.
+
 <i> (Not yet implemented)</i>
 
 ### HTTP Request
@@ -1353,6 +1355,7 @@ HTTP/2 501
 ```
 
 This endpoint enumerates the specified Network’s Bridges.
+
 <i> (Not yet implemented)</i>
 
 
@@ -1449,7 +1452,7 @@ HTTP/2 200
   }
 ```
 
-This endpoint enumerates the specified Network’s Nodes..
+This endpoint enumerates the specified Network’s Nodes.
 
 
 ### HTTP Request
@@ -1533,7 +1536,7 @@ curl -i \
 }
 ```
 
-This endpoint creates a new Node on the given Network..
+This endpoint creates a new Node on the given Network.
 
 
 ### HTTP Request
@@ -1783,6 +1786,7 @@ curl -i \
 ```
 
 This endpoint enumerates the specified Network’s Oracles.
+
 <i> (Not yet implemented) </i>
 
 
@@ -2008,6 +2012,7 @@ HTTP/2 501
 ```
 
 This endpoint retrieves the details for the specified Connector.
+
 <i> (Not yet implemented) </i>
 
 ### HTTP Request
