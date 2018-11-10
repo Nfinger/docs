@@ -54,5 +54,5 @@ Provide expects for the key to be included in all API requests to the server in 
 The `bearer` authorization header is scoped to an authorized platform user or application. This header may contain a sub to further limit scope to a specific token, smart contract, wallet or other entity.
 
 <aside class="success">
-To receive a token, you need the email and password you used to create a Provide account.
+To receive a token, use the email and password you used to create a Provide account.
 </aside>
