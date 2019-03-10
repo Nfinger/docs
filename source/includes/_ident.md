@@ -4,7 +4,31 @@
 
 ```shell
 curl -i https://ident.provide.services/status
-HTTP/2 204
+```
+
+> The above command returns a response:
+
+```
+HTTP/2 200
+date: Tue, 1 Jan 2019 00:00:00 GMT
+content-type: application/json; charset=UTF-8
+content-length: 131
+access-control-allow-credentials: true
+  access-control-allow-headers: Accept, Accept-Encoding, Authorization,
+  Cache-Control, Content-Length, Content-Type, Origin, User-Agent,
+  X-CSRF-Token, X-Requested-With
+access-control-allow-methods: GET, POST, PUT, DELETE, OPTIONS
+access-control-allow-origin: *
+access-control-expose-headers: X-Total-Results-Count
+```
+
+> And JSON structured like this:
+
+```
+{
+    "privacy_policy_updated_at": "2018-10-19T00:00:00.000000",
+    "terms_of_service_updated_at": "2018-10-19T00:00:00.000000"
+}
 ```
 
 This endpoint checks the status of the ident microservice.
