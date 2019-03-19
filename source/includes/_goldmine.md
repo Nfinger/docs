@@ -9,11 +9,12 @@ HTTP/2 204
 
 This endpoint checks the status of the goldmine microservice.
 
-### HTTP Request
+#### HTTP Request
 
 `GET /status`
 
-## Networks: Get Networks
+## Networks
+### Get Networks
 
 ```shell
 curl -i \
@@ -328,12 +329,11 @@ HTTP/2 200
 
 This endpoint enumerates available blockchain Networks and related configuration details.
 
-### HTTP Request
+#### HTTP Request
 
 `GET /api/v1/networks`
 
-
-## Networks: Get a Specific Network
+### Get a Specific Network
 
 ```shell
 curl -i \
@@ -561,18 +561,18 @@ HTTP/2 200
 This endpoint retrieves details for the given Network.
 
 
-### HTTP Request
+#### HTTP Request
 
 `GET /api/v1/networks/:id`
 
-### URL Parameters
+#### URL Parameters
 
 Parameter | Description
 --------- | -----------
 id | The ID of the specific network
 
 
-## Networks:  Network Addresses
+### Network Addresses
 
 ```shell
 curl -i \
@@ -593,17 +593,17 @@ This endpoint enumerates the addresses of the given Network.
 
 <i> (Not yet implemented)</i>
 
-### HTTP Request
+#### HTTP Request
 
 `GET /api/v1/networks/:id/addresses`
 
-### URL Parameters
+#### URL Parameters
 
 Parameter | Description
 --------- | -----------
 id | The ID of the specific network
 
-## Networks: Get Network blocks
+### Get Network Blocks
 
 ```shell
 curl -i \
@@ -624,17 +624,17 @@ This endpoint enumerates the blocks of the given Network.
 
 <i> (Not yet implemented)</i>
 
-### HTTP Request
+#### HTTP Request
 
 `GET /api/v1/networks/:id/blocks`
 
-### URL Parameters
+#### URL Parameters
 
 Parameter | Description
 --------- | -----------
 id | The ID of the specific network
 
-## Networks: Get Network contracts
+### Get Network contracts
 
 ```shell
 curl -i \
@@ -662,17 +662,17 @@ HTTP/2 200
 
 This endpoint enumerates the contracts of the given Network.
 
-### HTTP Request
+#### HTTP Request
 
 `GET /api/v1/networks/:id/contracts`
 
-### URL Parameters
+#### URL Parameters
 
 Parameter | Description
 --------- | -----------
 id | The ID of the specific network
 
-## Networks: Get Network transactions
+### Get Network transactions
 
 ```shell
 curl -i \
@@ -724,17 +724,17 @@ HTTP/2 200
 This endpoint enumerates the transactions of the given Network.
 
 
-### HTTP Request
+#### HTTP Request
 
 `GET /api/v1/networks/:id/transactions`
 
-### URL Parameters
+#### URL Parameters
 
 Parameter | Description
 --------- | -----------
 id | The ID of the specific network
 
-## Networks: Get Network transaction details
+### Get Network transaction details
 
 ```shell
 curl -i \
@@ -796,18 +796,18 @@ HTTP/2 200
 This endpoint retrieves the details of the Network’s specified Transaction.
 
 
-### HTTP Request
+#### HTTP Request
 
 `GET /api/v1/networks/:id/transactions/:transactionId`
 
-### URL Parameters
+#### URL Parameters
 
 Parameter | Description
 --------- | -----------
 id | The ID of the specific network
 transactionId | The ID of the specific transaction
 
-## Networks: Update a Network
+### Update a Network
 
 ```shell
 curl -i -XPUT \
@@ -821,17 +821,17 @@ HTTP/2 204
 This endpoint updates a given Network.
 
 
-### HTTP Request
+#### HTTP Request
 
 `PUT /api/v1/networks/:id`
 
-### URL Parameters
+#### URL Parameters
 
 Parameter | Description
 --------- | -----------
 id | The ID of the specific network
 
-## Networks: Get a Network's Contract details
+### Get a Network's Contract details
 
 ```shell
 curl -i \
@@ -906,18 +906,18 @@ HTTP/2 200
 This endpoint retrieves the details of the Network's specified Contract.
 
 
-### HTTP Request
+#### HTTP Request
 
 `GET /api/v1/networks/:id/contracts/:contractId`
 
-### URL Parameters
+#### URL Parameters
 
 Parameter | Description
 --------- | -----------
 id | The ID of the specific network
 contractId | The ID of the specified contract
 
-## Networks: Create a new Network
+### Create a new Network
 
 ```shell
 curl -i \
@@ -1330,12 +1330,12 @@ HTTP/2 201
 This endpoint creates a new Network.
 
 
-### HTTP Request
+#### HTTP Request
 
 `POST /api/v1/networks`
 
 
-## Networks: Get a Network's Bridges
+### Get a Network's Bridges
 
 ```shell
 curl -i \
@@ -1357,17 +1357,17 @@ This endpoint enumerates the specified Network’s Bridges.
 <i> (Not yet implemented)</i>
 
 
-### HTTP Request
+#### HTTP Request
 
 `GET /api/v1/networks/:id/bridges`
 
-### URL Parameters
+#### URL Parameters
 
 Parameter | Description
 --------- | -----------
 id | The ID of the specific network
 
-## Networks: Get a Network's Connectors
+### Get a Network's Connectors
 
 ```shell
 curl -i \
@@ -1388,17 +1388,17 @@ This endpoint enumerates the specified Network’s Connectors.
 
 <i> (Not yet implemented)</i>
 
-### HTTP Request
+#### HTTP Request
 
 `GET /api/v1/networks/:id/connectors`
 
-### URL Parameters
+#### URL Parameters
 
 Parameter | Description
 --------- | -----------
 id | The ID of the specific network
 
-## Networks: Get a Network's Nodes
+### Get a Network's Nodes
 
 ```shell
 curl -i \
@@ -1453,17 +1453,17 @@ HTTP/2 200
 This endpoint enumerates the specified Network’s Nodes.
 
 
-### HTTP Request
+#### HTTP Request
 
 `GET /api/v1/networks/:id/nodes`
 
-### URL Parameters
+#### URL Parameters
 
 Parameter | Description
 --------- | -----------
 id | The ID of the specific network
 
-## Networks: Create a new Network Node
+### Create a new Network Node
 
 ```shell
 curl -i \
@@ -1537,17 +1537,17 @@ curl -i \
 This endpoint creates a new Node on the given Network.
 
 
-### HTTP Request
+#### HTTP Request
 
 `POST /api/v1/networks/:id/nodes`
 
-### URL Parameters
+#### URL Parameters
 
 Parameter | Description
 --------- | -----------
 id | The ID of the specific network
 
-## Networks: Get a specific Network Node
+### Get a specific Network Node
 
 ```shell
 curl -i \
@@ -1682,18 +1682,18 @@ HTTP/2 200
 This endpoint retrieves the details of the Network’s specified Node.
 
 
-### HTTP Request
+#### HTTP Request
 
 `GET /api/v1/networks/:id/nodes/:nodeId`
 
-### URL Parameters
+#### URL Parameters
 
 Parameter | Description
 --------- | -----------
 id | The ID of the specific network
 nodeId | The ID of the specified Node
 
-## Networks: Get logs for a specific Network Node
+### Get logs for a specific Network Node
 
 ```shell
 curl -i \
@@ -1732,18 +1732,18 @@ HTTP/2 200
 This endpoint retrieves the logs for the specified Node.
 
 
-### HTTP Request
+#### HTTP Request
 
 `GET /api/v1/networks/:id/nodes/:nodeId/logs`
 
-### URL Parameters
+#### URL Parameters
 
 Parameter | Description
 --------- | -----------
 id | The ID of the specific network
 nodeId | The ID of the specified Node
 
-## Networks: Delete a Specific Node
+### Delete a Specific Node
 
 ```shell
 curl -i -XDELETE \
@@ -1756,18 +1756,18 @@ HTTP/2 204
 This endpoint removes the Network’s specified Node.
 
 
-### HTTP Request
+#### HTTP Request
 
 `DELETE /api/v1/networks/:id/nodes/:nodeId`
 
-### URL Parameters
+#### URL Parameters
 
 Parameter | Description
 --------- | -----------
 id | The ID of the specific network
 nodeId | The ID of the specified Node
 
-## Networks: Get a Network's Oracles
+### Get a Network's Oracles
 
 ```shell
 curl -i \
@@ -1788,17 +1788,17 @@ This endpoint enumerates the specified Network’s Oracles.
 <i> (Not yet implemented) </i>
 
 
-### HTTP Request
+#### HTTP Request
 
 `GET /api/v1/networks/:id/oracles`
 
-### URL Parameters
+#### URL Parameters
 
 Parameter | Description
 --------- | -----------
 id | The ID of the specific network
 
-## Networks: Get a Network's Tokens
+### Get a Network's Tokens
 
 ```shell
 curl -i \
@@ -1811,17 +1811,17 @@ HTTP/2 200
 This endpoint enumerates the specified Network’s Tokens.
 
 
-### HTTP Request
+#### HTTP Request
 
 `GET /api/v1/networks/:id/tokens`
 
-### URL Parameters
+#### URL Parameters
 
 Parameter | Description
 --------- | -----------
 id | The ID of the specific network
 
-## Networks: Get a Network's Status
+### Get a Network's Status
 
 ```shell
 curl -i \
@@ -1875,17 +1875,18 @@ HTTP/2 200
 This endpoint checks the status of the given Network..
 
 
-### HTTP Request
+#### HTTP Request
 
 `GET /api/v1/networks/:id/status`
 
-### URL Parameters
+#### URL Parameters
 
 Parameter | Description
 --------- | -----------
 id | The ID of the specific network
 
-## Prices: Get Prices
+## Prices
+### Get Prices
 
 ```shell
 curl -i \
@@ -1908,12 +1909,13 @@ HTTP/2 200
 This endpoint retrieves real-time pricing data for major currency pairs and supported tokens.
 
 
-### HTTP Request
+#### HTTP Request
 
 `GET /api/v1/prices`
 
 
-## Connectors: Get Connectors
+## Connectors
+### Get Connectors
 
 
 ```shell
@@ -1943,12 +1945,11 @@ HTTP/2 200
 
 This endpoint enumerates configured Connectors.
 
-### HTTP Request
+#### HTTP Request
 
 `GET /api/v1/connectors`
 
-
-## Connectors: Configure a new Connector
+### Configure a new Connector
 
 ```shell
 curl -i \
@@ -1987,12 +1988,12 @@ HTTP/2 201
 This endpoint configures a new Connector.
 
 
-### HTTP Request
+#### HTTP Request
 
 `POST /api/v1/connectors`
 
 
-## Connectors: Get details for a Specific Connector
+### Get details for a Specific Connector
 
 ```shell
 curl -i \
@@ -2013,17 +2014,17 @@ This endpoint retrieves the details for the specified Connector.
 
 <i> (Not yet implemented) </i>
 
-### HTTP Request
+#### HTTP Request
 
 `GET /api/v1/connectors/:id`
 
-### URL Parameters
+#### URL Parameters
 
 Parameter | Description
 --------- | -----------
 id | The ID of the specific network
 
-## Connectors: Delete a Specific Connector
+### Delete a Specific Connector
 
 ```shell
 curl -i -XDELETE \
@@ -2036,17 +2037,18 @@ HTTP/2 204
 This endpoint removes the specified Connector.
 
 
-### HTTP Request
+#### HTTP Request
 
 `DELETE /api/v1/connectors/:id`
 
-### URL Parameters
+#### URL Parameters
 
 Parameter | Description
 --------- | -----------
 id | The ID of the specific network
 
-## Contracts: Get Contracts
+## Contracts
+### Get Contracts
 
 
 ```shell
@@ -2089,17 +2091,17 @@ HTTP/2 200
 This endpoint enumerates managed smart contracts.
 
 
-### HTTP Request
+#### HTTP Request
 
 `GET /api/v1/contracts`
 
-### URL Parameters
+#### URL Parameters
 
 Parameter | Default | Description
 --------- | ----- | -----------
 filter_tokens | true | Filters token contracts from the response
 
-## Contracts: Deploy a new Contract
+### Deploy a new Contract
 
 ```shell
 curl -i \
@@ -2188,12 +2190,12 @@ HTTP/2 201
 This endpoint deploys a new contract.
 
 
-### HTTP Request
+#### HTTP Request
 
 `POST /api/v1/contracts`
 
 
-## Contracts: Get a Specific Contract
+### Get a Specific Contract
 
 ```shell
 curl -i \
@@ -2273,17 +2275,17 @@ HTTP/2 200
 This endpoint retrieves details for the specified Contract.
 
 
-### HTTP Request
+#### HTTP Request
 
 `GET /api/v1/contracts/:id`
 
-### URL Parameters
+#### URL Parameters
 
 Parameter | Description
 --------- | -----------
 id | The ID of the specific contract
 
-## Contracts: Execute a Specific Contract
+### Execute a Specific Contract
 
 ```shell
 curl -i \
@@ -2305,7 +2307,7 @@ HTTP/2 202
 This endpoint executes specific functionality encapsulated within a given Contract.
 
 
-### HTTP Request
+#### HTTP Request
 
 `POST /api/v1/contracts/:id/execute`
 
@@ -2316,14 +2318,15 @@ This endpoint executes specific functionality encapsulated within a given Contra
 - `params` is an array of values to pass as arguments to the method
 - `value` is the amount of token transfer
 
-### URL Parameters
+#### URL Parameters
 
 Parameter | Description
 --------- | -----------
 id | The ID of the specific contract
 
 
-## Oracles: Get Oracles
+## Oracles
+### Get Oracles
 
 ```shell
 curl -i \
@@ -2339,41 +2342,42 @@ HTTP/2 200
 This endpoint enumerates managed oracle contracts.
 
 
-### HTTP Request
+#### HTTP Request
 
 `GET /api/v1/oracles`
 
 
-## Oracles: Create and deploy an Oracle
+### Create and deploy an Oracle
 
 
 This endpoint creates a managed Oracle smart contract and deploys it to a Network. Upon successful deployment, the data feed will be consumed and written onto the ledger associated with the Network.
 
 <i> (Not yet implemented)</i>
 
-### HTTP Request
+#### HTTP Request
 
 `POST /api/v1/oracles`
 
 
-## Oracles: Get a Specific Oracle
+### Get a Specific Oracle
 
 
 This endpoint retrieves details for a specific oracle.
 
 
-### HTTP Request
+#### HTTP Request
 
 `GET /api/v1/oracles/:id`
 
-### URL Parameters
+#### URL Parameters
 
 Parameter | Description
 --------- | -----------
 id | The ID of the specific Oracle
 
 
-## Tokens: Get Tokens
+## Tokens
+### Get Tokens
 
 ```shell
 curl -i \
@@ -2393,24 +2397,24 @@ HTTP/2 200
 
 This endpoint enumerates managed Token contracts.
 
-### HTTP Request
+#### HTTP Request
 
 `GET /api/v1/tokens`
 
 
-## Tokens: Create a Token
+### Create a Token
 
 
 This endpoint creates a new Token.
 
 <i>(Not yet implemented)</i>
 
-### HTTP Request
+#### HTTP Request
 
 `POST /api/v1/tokens`
 
 
-## Tokens: Get details for a Specific Token
+### Get details for a Specific Token
 
 ```curl -i \
      -H 'content-type: application/json' \
@@ -2430,18 +2434,19 @@ HTTP/2 501
 This endpoint retrieves details for a specific Token.
 
 
-### HTTP Request
+#### HTTP Request
 
 `GET /api/v1/tokens/:id`
 
-### URL Parameters
+#### URL Parameters
 
 Parameter | Description
 --------- | -----------
 id | The ID of the specific Token
 
 
-## Transactions: Get Transactions
+## Transactions
+### Get Transactions
 
 
 ```shell
@@ -2477,12 +2482,12 @@ HTTP/2 200
 This endpoint enumerates transactions.
 
 
-### HTTP Request
+#### HTTP Request
 
 `GET /api/v1/transactions`
 
 
-## Transactions: Post a Transaction using a Wallet
+### Post a Transaction using a Wallet
 
 ```shell
 curl -i \
@@ -2600,12 +2605,12 @@ This endpoint prepares and signs a protocol Transaction using a Wallet on behalf
 Under certain conditions, calling this API will result in a transaction being created which requires lifecycle management (i.e., in the case when a managed Sidechain has been configured to scale micropayment channels and/or coalesce an application’s transactions for on-chain settlement).
 
 
-### HTTP Request
+#### HTTP Request
 
 `POST /api/v1/transactions`
 
 
-## Transactions: Get a specific Transaction
+### Get a specific Transaction
 
 ```shell
 curl -i \
@@ -2669,18 +2674,19 @@ This endpoint retrieves details for a specific Transaction.
 
 
 
-### HTTP Request
+#### HTTP Request
 
 `GET /api/v1/transactions/:id`
 
-### URL Parameters
+#### URL Parameters
 
 Parameter | Description
 --------- | -----------
 id | The ID of the specific Transaction
 
 
-## Wallets: Get Wallets
+## Wallets
+### Get Wallets
 
 ```shell
 curl -i \
@@ -2709,13 +2715,13 @@ This endpoint enumerates wallets used for storing cryptocurrency or tokens on be
 
 <aside class="warning">Balances are returned as null here for performance reasons; see  <code>GET /api/v1/wallets/:id</code> to get balance details in the native currency for the network.</aside>
 
-### HTTP Request
+#### HTTP Request
 
 `GET /api/v1/wallets`
 
 
 
-## Wallets: Create a Wallet
+### Create a Wallet
 
 ```shell
 curl -i \
@@ -2744,12 +2750,12 @@ HTTP/2 201
 This endpoint creates a managed Wallet (signing identity) capable of storing cryptocurrencies native to a specified Network.
 
 
-### HTTP Request
+#### HTTP Request
 
 `POST /api/v1/wallets`
 
 
-## Wallets: Get a Specific Wallet
+### Get a Specific Wallet
 
 ```shell
 curl -i \
@@ -2778,28 +2784,28 @@ This endpoint retrieves Network-specific details for a specific Wallet.
 
 
 
-### HTTP Request
+#### HTTP Request
 
 `GET /api/v1/wallets/:id`
 
-### URL Parameters
+#### URL Parameters
 
 Parameter | Description
 --------- | -----------
 id | The ID of the specific wallet
 
-## Wallets: Get Wallet balance by Contract
+### Get Wallet balance by Contract
 
 
 This endpoint retrieves details of a specific Wallet's balance by token contract.
 
 <i>(Not yet implemented)</i>
 
-### HTTP Request
+#### HTTP Request
 
 `GET /api/v1/wallets/:id/balances/:tokenId`
 
-### URL Parameters
+#### URL Parameters
 
 Parameter | Description
 --------- | -----------

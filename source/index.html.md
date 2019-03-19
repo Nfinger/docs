@@ -13,11 +13,19 @@ includes:
 search: true
 ---
 
-# Introduction
+# Welcome
 
-Welcome to the [Provide](http://provide.services/) ident and goldmine API  portal. Ident microservice lets you manage Provide platform users and applications. Goldmine API gives you the power to leverage public blockchain information in building best-of-breed applications. Both ident and goldmine are RESTful.
+Welcome to the [Provide](http://provide.services/) ident and goldmine API  portal.
+- Ident microservice lets you manage Provide platform users and applications.
+- Goldmine API gives you the power to leverage public blockchain information in building best-of-breed applications. *Both ident and goldmine are RESTful.*
+
+<aside class="caution">
+**NOTE:** to access the API you need to [create an account](https://dawn.provide.services/sign-up) and create a dApp on one of the many networks available to you.
+</aside>
 
 # Authentication
+
+## API Token Generation
 
 > To authorize a Token on behalf of an authorized User or Application:
 
