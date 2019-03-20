@@ -15,15 +15,29 @@ search: true
 
 # Welcome
 
-Welcome to the [Provide](http://provide.services/) ident and goldmine API  portal.
-- Ident microservice lets you manage Provide platform users and applications.
-- Goldmine API gives you the power to leverage public blockchain information in building best-of-breed applications. *Both ident and goldmine are RESTful.*
+## The [Provide](http://provide.services/) _ident_ and _goldmine_ API  portal.
+  - Ident microservice lets you manage Provide platform users and applications.
+  - Goldmine API gives you the power to leverage public blockchain information in building best-of-breed applications.
+
+Both ident and goldmine are **RESTful**.
 
 <aside class="caution">
-**NOTE:** to access the API you need to [create an account](https://dawn.provide.services/sign-up) and create a dApp on one of the many networks available to you.
+ <strong>NOTE:</strong> to access the API you need to <a href="https://dawn.provide.services/sign-up" target="_blank"> <strong>open an account</strong></a> and create a dApp on one of the many networks available to you.
+</aside>
+
+<aside class="caution">
+<strong>NOTE:</strong>  We recommend you <strong>check the status</strong> of the service before making requests.
 </aside>
 
 # Authentication
+
+## API Authorized Calls
+
+Provide requires an API token to be included in all API requests to the server in a header that looks like the following:
+
+`Authorization: bearer yoUr-AutH-TOKeN-FrOm-sIgnINg-in`
+
+The `bearer` authorization header is scoped to an authorized platform user or application. This header may contain a sub to further limit scope to a specific token, smart contract, wallet or other entity.
 
 ## API Token Generation
 
@@ -52,14 +66,17 @@ HTTP/2 201
     }
 }
 ```
+### Auto-Generation
 
-Provide uses API keys to allow access to the API. If you already have an account on the [Provide console](https://dawn.provide.services/sign-in), you can get a token by simply deploying an application. We recommend you check the status of the service before making requests.
+If you already have an account on the [Provide console](https://dawn.provide.services/sign-in), you generate a token by simply **deploying a dapp**. All API tokens will be accessible in via:
 
-Provide expects for the key to be included in all API requests to the server in a header that looks like the following:
+ `https://dawn.provide.services/dapps/yoUr-dApp-HaSh-goEs-HeRE/api-tokens`
 
-`Authorization: bearer yoUr-AutH-TOKeN-FrOm-sIgnINg-in`
+You are able to **generate, revoke, and manage** all tokens at will in this interface as well.
 
-The `bearer` authorization header is scoped to an authorized platform user or application. This header may contain a sub to further limit scope to a specific token, smart contract, wallet or other entity.
+### Manual Generation
+
+Outside of the [Provide console](https://dawn.provide.services/sign-in), you can generate API tokens via the ident API as described to the right.
 
 <aside class="success">
 To receive a token, use the email and password you used to create a Provide account.

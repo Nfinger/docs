@@ -33,12 +33,13 @@ access-control-expose-headers: X-Total-Results-Count
 
 This endpoint checks the status of the ident microservice.
 
-### HTTP Request
+#### HTTP Request
 
 `GET /api/vi/status`
 
 
-## Apps: Get Applications
+## Apps
+### Get Applications
 
 
 ```shell
@@ -82,11 +83,11 @@ HTTP/2 200
 
 This endpoint enumerates platform Applications visible to the authorized caller.
 
-### HTTP Request
+#### HTTP Request
 
 `GET /api/v1/applications`
 
-## Apps: Post an Application
+### Post an Application
 
 
 ```shell
@@ -117,11 +118,11 @@ HTTP/2 201
 
 This endpoint creates a new Application on behalf of the authorized platform User.
 
-### HTTP Request
+#### HTTP Request
 
 `POST /api/v1/applications`
 
-## Apps: Get Application details
+### Get Application details
 
 
 ```shell
@@ -153,18 +154,18 @@ HTTP/2 200
 
 This endpoint retrieves the details of the specified Application.
 
-### HTTP Request
+#### HTTP Request
 
 `GET /api/vi/applications/:id`
 
-### Query Parameters
+#### Query Parameters
 
 Parameter | Description
 --------- | -----------
 id | The ID of the Application to retrieve
 
 
-## Apps: Update Application details
+### Update Application details
 
 
 ```shell
@@ -178,18 +179,18 @@ HTTP/2 204
 
 This endpoint updates details of the specified Application.
 
-### HTTP Request
+#### HTTP Request
 
 `PUT /api/vi/applications/:id`
 
-### Query Parameters
+#### Query Parameters
 
 Parameter | Description
 --------- | -----------
 id | The ID of the Application to retrieve
 
 
-## Apps: Get Application tokens
+### Get Application tokens
 
 ```shell
 curl -i \
@@ -216,17 +217,17 @@ HTTP/2 200
 
 This endpoint fetches the Tokens of the specified Application.
 
-### HTTP Request
+#### HTTP Request
 
 `GET /api/vi/applications/:id/tokens`
 
-### Query Parameters
+#### Query Parameters
 
 Parameter | Description
 --------- | -----------
 id | The ID of the Application to retrieve
 
-## Apps: Delete an Application
+### Delete an Application
 
 
 ```shell
@@ -251,18 +252,20 @@ This endpoint removes the specified Application.
 
 <i>(Not yet implemented)</i>
 
-### HTTP Request
+#### HTTP Request
 
 `DELETE /api/vi/applications/:id`
 
-### Query Parameters
+#### Query Parameters
 
 Parameter | Description
 --------- | -----------
 id | The ID of the Application to retrieve
 
 
-## Tokens: Get Tokens
+## Tokens
+
+### Get Tokens
 
 
 ```shell
@@ -298,12 +301,12 @@ HTTP/2 200
 
 This endpoint enumerates previously authorized Tokens for the authorized User or Application.
 
-### HTTP Request
+#### HTTP Request
 
 `GET /api/v1/tokens`
 
 
-## Tokens: Post Tokens
+### Post Tokens
 
 
 ```shell
@@ -333,12 +336,12 @@ HTTP/2 201
 
 This endpoint authorizes a Token on behalf of the authorized User or Application.
 
-### HTTP Request
+#### HTTP Request
 
 `POST /api/v1/tokens`
 
 
-## Tokens: Delete Tokens
+### Delete Tokens
 
 
 ```shell
@@ -350,17 +353,17 @@ HTTP/2 204
 
 This endpoint destroys a previously authorized Token on behalf of the authorized User or Application.
 
-### HTTP Request
+#### HTTP Request
 
 `DELETE /api/v1/tokens/:id`
 
-### Query Parameters
+#### Query Parameters
 
 Parameter | Description
 --------- | -----------
 id | The ID of the Application to retrieve
 
-## Users: Get Users
+### Get Users
 
 
 ```shell
@@ -394,12 +397,13 @@ HTTP/2 200
 
 This endpoint enumerates previously created Users for the authorized Application.
 
-### HTTP Request
+#### HTTP Request
 
 `GET /api/v1/users`
 
 
-## Users: Post Users
+## Users
+### Post Users
 
 
 ```shell
@@ -426,12 +430,12 @@ HTTP/2 201
 
 This endpoint creates a new platform User or a User on behalf of an authorized Application.
 
-### HTTP Request
+#### HTTP Request
 
 `POST /api/v1/users`
 
 
-## Users: Update Users
+### Update Users
 
 
 ```shell
@@ -446,18 +450,18 @@ HTTP/2 204
 
 This endpoint updates an existing User record.
 
-### HTTP Request
+#### HTTP Request
 
 `PUT /api/vi/users/:id`
 
-### Query Parameters
+#### Query Parameters
 
 Parameter | Description
 --------- | -----------
 id | The ID of the Application to retrieve
 
 
-## Users: Delete Users
+### Delete Users
 
 
 ```shell
@@ -482,11 +486,11 @@ This endpoint removes a User record.
 
 <i> (Not yet implemented)</i>
 
-### HTTP Request
+#### HTTP Request
 
 `DELETE /api/vi/users/:id`
 
-### Query Parameters
+#### Query Parameters
 
 Parameter | Description
 --------- | -----------
